@@ -11,7 +11,10 @@ inputBox.addEventListener('input', function(e) {
 });
 
 btnAdd.addEventListener('click', function() {
-  if (list.childElementCount === 8) {
+  if(inputBox.value==``){
+     alert(' empty ');
+}
+else if(list.childElementCount === 8) {
     alert('Stack is full');
   } else {
     var newListElement = document.createElement('li');
